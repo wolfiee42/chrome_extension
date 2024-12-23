@@ -37,6 +37,14 @@
   padding: 2em;
 }
 
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
 .read-the-docs {
   color: #888;
 }
