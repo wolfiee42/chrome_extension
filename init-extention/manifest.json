@@ -1,22 +1,15 @@
 {
     "manifest_version": 3,
-    "name": "My First Extension",
+    "name": "URL Viewer",
+    "version": "1.0",
+    "description": "Shows the current URL of the active tab",
+    "permissions": [
+        "activeTab"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
     "icons": {
         "32": "icon.png"
-    },
-    "version": "1.0.0",
-    "background": {
-        "service_worker": "service-worker.js",
-        "type": "module"
-    },
-    "action": {
-        "default_popup": "index.html"
-    },
-    "permissions": [
-        "scripting"
-    ],
-    "host_permissions": [
-        "http://*/*",
-        "https://*/*"
-    ]
+    }
 }
